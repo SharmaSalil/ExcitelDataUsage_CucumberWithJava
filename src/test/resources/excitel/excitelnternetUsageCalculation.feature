@@ -7,11 +7,7 @@ Feature: Monthly Internet Usage Tracking
   Scenario Outline: io: View and calculate internet usage for a selected month
     Given I log in to the Excitel portal with the following credentials
       | username   | password          |
-<<<<<<< HEAD
-      | 2299884411   | typeYourPassword  |
-=======
       | 229988422   | TypeYourPassword  |
->>>>>>> 08ef4c3 (my first code)
     When I navigate to the session usage page
     And I select "<month>" to retrieve usage details
     Then I should see the total internet usage calculated for that month

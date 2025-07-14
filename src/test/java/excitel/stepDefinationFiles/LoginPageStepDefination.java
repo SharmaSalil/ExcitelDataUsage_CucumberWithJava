@@ -5,10 +5,7 @@ import excitel.domainObjects.Credentials;
 import excitel.pages.LoginPage;
 import excitel.pages.PageFactoryManager;
 import excitel.applicationUrl.ApplicationUrls;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
 public class LoginPageStepDefination {
 
