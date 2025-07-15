@@ -16,10 +16,6 @@ public class LoginPage extends GenericFunctions {
     private static final By password_txtFld = By.xpath("//input[@type='password']");
     private static final By submit_btn = By.xpath("//button[@class='btn']");
 
-    public static By getLoader(){
-        return loader;
-    }
-
     public LoginPage username_txtFld_waitVisibilityOfElementLocated() {
         waitVisibilityOfElementLocated(username_txtFld);
         return this;

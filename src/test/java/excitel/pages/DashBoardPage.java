@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 
 public class DashBoardPage extends GenericFunctions {
 
-
     public DashBoardPage(WebDriver driver) {
         super(driver);
     }
@@ -14,8 +13,9 @@ public class DashBoardPage extends GenericFunctions {
     private final static By session_btn = By.xpath("//span[contains(text(),'Sessions')]");
 
     public DashBoardPage loader_waitInvisibilityOfElementLocated() {
-        waitInvisibilityOfElementLocated(LoginPage.getLoader());
+        new LoginPage(driver).loader_waitInvisibilityOfElementLocated();
         return this;
+
     }
 
     public DashBoardPage session_btn_waitVisibilityOfElementLocated() {

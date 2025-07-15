@@ -22,7 +22,7 @@ public class SessionsPage extends GenericFunctions {
     private final static By rows_WE = By.xpath("//tr[@class='cpointer']");
 
     public SessionsPage loader_waitInvisibilityOfElementLocated() {
-        waitInvisibilityOfElementLocated(LoginPage.getLoader());
+        new LoginPage(driver).loader_waitInvisibilityOfElementLocated();
         return this;
     }
 
